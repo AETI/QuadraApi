@@ -122,7 +122,7 @@
             this.quadraUrlTextBox.Name = "quadraUrlTextBox";
             this.quadraUrlTextBox.Size = new System.Drawing.Size(155, 20);
             this.quadraUrlTextBox.TabIndex = 7;
-            this.quadraUrlTextBox.Text = "http://quadradev.aeti-inc.com";
+            this.quadraUrlTextBox.Text = "https://quadra.aeti-inc.com";
             // 
             // dataPanel
             // 
