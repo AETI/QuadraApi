@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
@@ -40,15 +40,15 @@
 		<form class="form">
 		  <div class="form-group">
 			<label for="quadraUrlTextbox">Quadra Url</label>
-			<input type="text" class="form-control" id="quadraUrlTextbox" placeholder="https://quadra.aeti-inc.com" value="http://quadradev.aeti-inc.com">
+			<input type="text" class="form-control" id="quadraUrlTextbox" placeholder="https://quadra.aeti-inc.com" value="https://quadra.aeti-inc.com">
 		  </div>
 		  <div class="form-group">
 			<label for="emailTextbox">Email</label>
-			<input type="text" class="form-control" id="emailTextbox" placeholder="jane.doe@example.com">
+			<input type="text" class="form-control" id="emailTextbox" placeholder="jdoe@fake.net">
 		  </div>
 		  <div class="form-group">
 			<label for="passwordTextbox">Password</label>
-			<input type="password" class="form-control" id="passwordTextbox" placeholder="jane.doe@example.com">
+			<input type="password" class="form-control" id="passwordTextbox" placeholder="abc123">
 		  </div>		  
 		  <button onclick="GetAccessToken();" class="btn btn-default">Login</button>
 		</form>
@@ -96,6 +96,9 @@
     <script>
         var _accessToken = '';
 		
+        //
+        //  Setup Quadra API button click event handlers
+        //
 		$(document).ready(function() {
 			PleaseWait(false);
 			$("#data button").click(function() {
@@ -103,6 +106,10 @@
 			});
 		});
 		
+        //
+        //  Authenticate to the Quadra API, sets _accessToken variable
+        //  after successful call
+        //
 		function GetAccessToken() {			
 			var baseUrl = $("#quadraUrlTextbox").val();
 			
@@ -119,7 +126,7 @@
 			$.ajax({
 				data: postData,
 				type: "POST",
-				url: baseUrl + "/Token",				
+				url: baseUrl + "/api/token",				
 				dataType: "json"                
 			}).done(function(data) {
 				$("#passwordTextbox").val("");
@@ -138,7 +145,10 @@
 				alert( jqXHR.responseText );
 			});
 		}
-				
+
+        //
+        // Retrieve json data from the Quadra API and populate it into a table
+        //
         function GetData(dataUrl)  {
 			var baseUrl = $("#quadraUrlTextbox").val();
 			
@@ -184,6 +194,9 @@
 			});
         }       
 
+        //
+        //  Progress indicator helper
+        //
 		function PleaseWait(show) {
 			if(show) {
 				$("#pleaseWait").modal();

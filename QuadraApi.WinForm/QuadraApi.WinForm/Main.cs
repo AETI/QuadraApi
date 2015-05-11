@@ -92,7 +92,7 @@ namespace QuadraApi.WinForm
                 using (var client = new HttpClient())
                 {
                     // Get response
-                    var response = client.PostAsync(quadraUrlTextBox.Text + "/Token", content).Result;
+                    var response = client.PostAsync(quadraUrlTextBox.Text + "/api/token", content).Result;
                     responseText = response.Content.ReadAsStringAsync().Result;                    
                 }
 
