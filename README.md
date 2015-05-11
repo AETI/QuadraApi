@@ -2,7 +2,7 @@
 
 Sample projects demonstrating how to authenticate and retreive data from the Quadra API.
 
-API documentation available at https://github.com/AETI/QuadraApi/wiki/API-Documentation
+API documentation available at https://github.com/AETI/QuadraApi/wiki
 
 ### QuadraApi.JQuery
 Sample html page using JQuery to retreive an OAuth2 token and then pass the token to subsequent Quadra API requests.   Result data is returned as json.   You may view a live demonstration of this page here: 
