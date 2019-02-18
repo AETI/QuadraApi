@@ -13,16 +13,11 @@ c:\users\osoule\documents\visual studio 2013\Projects\QuadraApi.WinForm\QuadraAp
 c:\users\osoule\documents\visual studio 2013\Projects\QuadraApi.WinForm\QuadraApi.WinForm\obj\Debug\QuadraApi.WinForm.exe
 c:\users\osoule\documents\visual studio 2013\Projects\QuadraApi.WinForm\QuadraApi.WinForm\obj\Debug\QuadraApi.WinForm.pdb
 C:\Projects\QuadraApi\QuadraApi.WinForm\QuadraApi.WinForm\bin\Debug\QuadraApi.WinForm.exe.config
-C:\Projects\QuadraApi\QuadraApi.WinForm\QuadraApi.WinForm\obj\Debug\QuadraApi.WinForm.exe
-C:\Projects\QuadraApi\QuadraApi.WinForm\QuadraApi.WinForm\obj\Debug\QuadraApi.WinForm.pdb
 C:\Projects\QuadraApi\QuadraApi.WinForm\QuadraApi.WinForm\bin\Debug\QuadraApi.WinForm.exe
 C:\Projects\QuadraApi\QuadraApi.WinForm\QuadraApi.WinForm\bin\Debug\QuadraApi.WinForm.pdb
-C:\Projects\QuadraApi\QuadraApi.WinForm\QuadraApi.WinForm\bin\Debug\System.Net.Http.Extensions.dll
-C:\Projects\QuadraApi\QuadraApi.WinForm\QuadraApi.WinForm\bin\Debug\System.Net.Http.Primitives.dll
-C:\Projects\QuadraApi\QuadraApi.WinForm\QuadraApi.WinForm\bin\Debug\System.Net.Http.Extensions.xml
-C:\Projects\QuadraApi\QuadraApi.WinForm\QuadraApi.WinForm\bin\Debug\System.Net.Http.Primitives.xml
-C:\Projects\QuadraApi\QuadraApi.WinForm\QuadraApi.WinForm\obj\Debug\QuadraApi.WinForm.csproj.App.config
 C:\Projects\QuadraApi\QuadraApi.WinForm\QuadraApi.WinForm\obj\Debug\QuadraApi.WinForm.csprojResolveAssemblyReference.cache
 C:\Projects\QuadraApi\QuadraApi.WinForm\QuadraApi.WinForm\obj\Debug\QuadraApi.WinForm.Main.resources
 C:\Projects\QuadraApi\QuadraApi.WinForm\QuadraApi.WinForm\obj\Debug\QuadraApi.WinForm.Properties.Resources.resources
 C:\Projects\QuadraApi\QuadraApi.WinForm\QuadraApi.WinForm\obj\Debug\QuadraApi.WinForm.csproj.GenerateResource.Cache
+C:\Projects\QuadraApi\QuadraApi.WinForm\QuadraApi.WinForm\obj\Debug\QuadraApi.WinForm.exe
+C:\Projects\QuadraApi\QuadraApi.WinForm\QuadraApi.WinForm\obj\Debug\QuadraApi.WinForm.pdb

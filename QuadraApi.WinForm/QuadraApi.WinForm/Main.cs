@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
@@ -33,6 +34,8 @@ namespace QuadraApi.WinForm
         {
             InitializeComponent();
             responseTypeComboBox.SelectedIndex = 0;
+            ActiveControl = userNameTextBox;
+            AcceptButton = loginButton;
         }
 
         #endregion
@@ -83,12 +86,17 @@ namespace QuadraApi.WinForm
                 var pairs = new List<KeyValuePair<string, string>>
                 {
                     new KeyValuePair<string, string>( "grant_type", "password" ), 
-                    new KeyValuePair<string, string>( "userName", userNameTextBox.Text ), 
+                    new KeyValuePair<string, string>( "username", userNameTextBox.Text ), 
                     new KeyValuePair<string, string> ( "password", passwordTextBox.Text )
                 };
                 var content = new FormUrlEncodedContent(pairs);
 
-                // Perform POST on Quadra API
+                // Required to prevent SSL/TLS error
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls |
+                    SecurityProtocolType.Tls11 |
+                    SecurityProtocolType.Tls12;
+
+                // Perform POST on Quadra API                
                 using (var client = new HttpClient())
                 {
                     // Get response
