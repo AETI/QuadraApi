@@ -1,3 +1,7 @@
+```txt
+❗ Note:  The Quadra API has been deprecated as of Quadra v10.0
+```
+
 # Quadra API
 
 Sample project demonstrating how to authenticate and retreive data from the Quadra API.
