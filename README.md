@@ -1,5 +1,5 @@
 ```txt
-❗ Note:  The Quadra API has been deprecated as of Quadra v10.0
+❗ Note:  The Quadra API has been removed as of Quadra v10.0
 ```
 
 # Quadra API
